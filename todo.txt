@@ -1,0 +1,13 @@
+---  definitely  ---
+
+build mode and play mode
+
+players, turn cycles, score
+
+art
+
+
+
+---  possibly  ---
+
+main menu
