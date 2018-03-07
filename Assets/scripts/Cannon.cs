@@ -7,12 +7,21 @@ public class Cannon : MonoBehaviour
 	public GameObject ball;
 	public float launchForce;
 	public Vector2 launchUnitVector = Vector2.one.normalized;
+
+	public Transform visuals;
+	public Transform indicator;
 	//public Vector3 defaultPos;
 
 	/*void Start ()
 	{
 		//defaultPos = transform.position;
 	}*/
+
+	void Update()
+	{
+		indicator.localPosition = new Vector3(launchForce/3,0,0);
+		visuals.rotation = Quaternion.Euler(0, 0, Vector2.Angle(Vector2.right, launchUnitVector));
+	}
 
 	public void LaunchBall()
 	{
