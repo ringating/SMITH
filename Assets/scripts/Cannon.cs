@@ -19,7 +19,7 @@ public class Cannon : MonoBehaviour
 
 	void Update()
 	{
-		indicator.localPosition = new Vector3(launchForce/3,0,0);
+		indicator.localPosition = new Vector3(launchForce/4,0,0);
 		visuals.rotation = Quaternion.Euler(0, 0, Vector2.Angle(Vector2.right, launchUnitVector));
 	}
 

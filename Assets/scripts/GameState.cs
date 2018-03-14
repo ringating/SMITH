@@ -92,7 +92,7 @@ public class GameState : MonoBehaviour
 					selfPlay = false;
 					editMode = true;
 					p1Map = !p1Map;
-
+					ClearMap();
 					Debug.Log("player successfully completed other player's map");
 				}
 			}
